@@ -1,0 +1,6 @@
+tensorflow
+keras
+joblib
+librosa
+numpy
+sklearn

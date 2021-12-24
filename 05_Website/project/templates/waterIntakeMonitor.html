@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+	How much have you drank?
+</h1>
+
+<h1>
+	User: {{ name }}
+</h1>
+
+
+<head>
+
+</head>
+<body>
+
+    <div style="width: 100%;
+    background-color: white; margin-bottom: 3cm">
+        <div style="width: {{progress}}%;
+        height: 30px;
+        background-color: #04AA6D;
+        text-align: center; /* To center it horizontally (if you want) */
+        line-height: 30px; /* To center it vertically */
+        color: white;">{{progress}}%</div>
+    </div>
+    <p></p>
+    <p> </p>
+    {% if onTrack %}
+    <h1 class="title"> 
+        Well done! you are on top of your drinking for the day!
+    </h1>
+    {% endif %}
+
+    {% if not onTrack %}
+    <h1 class="title"> 
+        You have to drink more to get on top of your daily water intake!
+    </h1>
+    {% endif %}
+</body>
+</html>
+
+{% endblock %}

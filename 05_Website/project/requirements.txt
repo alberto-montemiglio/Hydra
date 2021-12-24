@@ -1,0 +1,12 @@
+statsmodels
+flask
+flask-sqlalchemy
+flask_login
+werkzeug
+bokeh
+pandas
+pymongo
+"pymongo[srv]"
+waitress
+time
+datetime

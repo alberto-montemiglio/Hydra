@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Water Intake Detection for Dementia patients
+</h1>
+<h2 class="subtitle">
+  This project aims at tackling the issue of dehydration in dementia patients, one of the leading causes of acute confusional states in dementia patients.
+
+This is a novel, non-intrusive method of detecting water intake by means of a throat microphone and a Multi-Layer Perceptron Classifier algorithm.
+
+This website is aimed at dementia patients and carers and provides the collected raw data, the data analysis and a progress bar of how much water should be drank in a day. The water intake is tailored to the age and weight of the patient using the data gathered in the login phase.
+Finally, as a reminder to drink more if the current water intake is lower than what should have been drank since the start of the day, an actuation platform consisting of a peristaltic water pump pours water in a glass.
+</h2>
+{% endblock %}

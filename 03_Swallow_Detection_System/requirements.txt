@@ -1,0 +1,9 @@
+scipy
+sounddevice
+pydub
+joblib
+librosa
+pymongo
+urllib
+requests
+json

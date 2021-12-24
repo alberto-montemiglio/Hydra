@@ -1,0 +1,21 @@
+To install packages, run:
+```
+$ pip install -r requirements.txt
+```
+
+To run automatically, in a new terminal, run:
+```
+sudo crontab -e
+```
+and type this at the end of the file:
+```
+@reboot python3 /home/pi/IoT/python_scripts/record_swallows.py
+* * * * * python3 /home/pi/IoT/python_scripts/ML_swallow_classifier.py
+*/15 * * * * * python3 /home/pi/IoT/python_scripts/upload_to_online_database.py
+```
+
+
+Toselect a device for Sounddevice:
+```
+$ python3 -m sounddevice
+```

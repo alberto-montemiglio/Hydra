@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+	Plot of Water Intake, Temperature, Pressure, Humidity against Time
+</h1>
+
+<h1>
+	User: {{ name }}
+</h1>
+
+
+<head>
+    {{ js_resources|indent(4)|safe }}
+    {{ css_resources|indent(4)|safe }}
+    {{ plot_script|indent(4)|safe }}
+</head>
+<body>
+    <!-- <h1 style="text-align: center; margin-bottom: 40px;">Plot of Water Intake, Temperature, Pressure, Humidity against Time</h1> -->
+    <div style="display: flex; justify-content: center;">
+        {{ plot_div|indent(4)|safe }}
+    </div>
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,1 @@
+This app will use the Flask app factory pattern with blueprints. One blueprint handles the regular routes, which include the index and the protected profile page. Another blueprint handles everything auth-related. In a real app, you can break down the functionality in any way you like, but the solution covered here will work well for this tutorial.
